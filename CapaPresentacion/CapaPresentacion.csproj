@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{29A54084-8E19-42C7-9D9B-773260C3BA2C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CapaPresentacion</RootNamespace>
+    <AssemblyName>CapaPresentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>award_icon-icons.com_66110.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CrearTutoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearTutoria.designer.cs">
+      <DependentUpon>CrearTutoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BD_Registro_TutoriasDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD_Registro_TutoriasDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FormAsignarTutorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAsignarTutorias.Designer.cs">
+      <DependentUpon>FormAsignarTutorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAsistencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAsistencia.designer.cs">
+      <DependentUpon>FormAsistencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCiclos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCiclos.Designer.cs">
+      <DependentUpon>FormCiclos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFiltrarReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFiltrarReportes.Designer.cs">
+      <DependentUpon>FormFiltrarReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGenerarReporteFecha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGenerarReporteFecha.Designer.cs">
+      <DependentUpon>FormGenerarReporteFecha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMaestroMateria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMaestroMateria.Designer.cs">
+      <DependentUpon>FormMaestroMateria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMaestros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMaestros.Designer.cs">
+      <DependentUpon>FormMaestros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMantAsignarTutoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMantAsignarTutoria.designer.cs">
+      <DependentUpon>FormMantAsignarTutoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMantAsistencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMantAsistencia.designer.cs">
+      <DependentUpon>FormMantAsistencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMantCiclos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMantCiclos.designer.cs">
+      <DependentUpon>FormMantCiclos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMantUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMantUser.designer.cs">
+      <DependentUpon>FormMantUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMantMaestros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMantMaestros.designer.cs">
+      <DependentUpon>FormMantMaestros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMantTutorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMantTutorias.designer.cs">
+      <DependentUpon>FormMantTutorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMantEstudiantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMantEstudiantes.designer.cs">
+      <DependentUpon>FormMantEstudiantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRecuperarContraseña.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRecuperarContraseña.Designer.cs">
+      <DependentUpon>FormRecuperarContraseña.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReporteAsistencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReporteAsistencia.Designer.cs">
+      <DependentUpon>FormReporteAsistencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReportes.Designer.cs">
+      <DependentUpon>FormReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUsuario.Designer.cs">
+      <DependentUpon>FormUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenu.designer.cs">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipal.designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FormEstudiantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEstudiantes.Designer.cs">
+      <DependentUpon>FormEstudiantes.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CrearTutoria.resx">
+      <DependentUpon>CrearTutoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAsignarTutorias.resx">
+      <DependentUpon>FormAsignarTutorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAsistencia.resx">
+      <DependentUpon>FormAsistencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCiclos.resx">
+      <DependentUpon>FormCiclos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFiltrarReportes.resx">
+      <DependentUpon>FormFiltrarReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGenerarReporteFecha.resx">
+      <DependentUpon>FormGenerarReporteFecha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMaestros.resx">
+      <DependentUpon>FormMaestros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMantAsignarTutoria.resx">
+      <DependentUpon>FormMantAsignarTutoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMantAsistencia.resx">
+      <DependentUpon>FormMantAsistencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMantCiclos.resx">
+      <DependentUpon>FormMantCiclos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMantUser.resx">
+      <DependentUpon>FormMantUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMantMaestros.resx">
+      <DependentUpon>FormMantMaestros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMantTutorias.resx">
+      <DependentUpon>FormMantTutorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMantEstudiantes.resx">
+      <DependentUpon>FormMantEstudiantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRecuperarContraseña.resx">
+      <DependentUpon>FormRecuperarContraseña.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReporteAsistencia.resx">
+      <DependentUpon>FormReporteAsistencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReportes.resx">
+      <DependentUpon>FormReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUsuario.resx">
+      <DependentUpon>FormUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenu.resx">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="FormEstudiantes.resx">
+      <DependentUpon>FormEstudiantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="ReportAsistencia.rdlc" />
+    <None Include=".xsc">
+      <DependentUpon>BD_Registro_TutoriasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BD_Registro_TutoriasDataSet.xsc">
+      <DependentUpon>BD_Registro_TutoriasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BD_Registro_TutoriasDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BD_Registro_TutoriasDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include=".xss">
+      <DependentUpon>BD_Registro_TutoriasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BD_Registro_TutoriasDataSet.xss">
+      <DependentUpon>BD_Registro_TutoriasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaDatos\CapaDatos.csproj">
+      <Project>{60FAE518-B2C2-446E-8854-E718A5D00CED}</Project>
+      <Name>CapaDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaEntidades\CapaEntidades.csproj">
+      <Project>{5d73016d-968e-482d-b4e6-0977e2bd33ac}</Project>
+      <Name>CapaEntidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaNegocio\CapaNegocio.csproj">
+      <Project>{1c0f4dbc-236a-4f7f-8215-9ea708508003}</Project>
+      <Name>CapaNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\x-button.png" />
+    <None Include="Resources\agregar-documentos.png" />
+    <Content Include="award_icon-icons.com_66110.ico" />
+    <None Include="Resources\agregar-documentos1.png" />
+    <None Include="Resources\002-floppy-disk.png" />
+    <None Include="Resources\agregar-usuario.png" />
+    <Content Include="Resources\analisis.png" />
+    <None Include="Resources\analisis1.png" />
+    <None Include="Resources\book.png" />
+    <None Include="Resources\calendario.png" />
+    <Content Include="Resources\cuadrado-comprimido.png" />
+    <None Include="Resources\grupo1.png" />
+    <None Include="Resources\editar.png" />
+    <None Include="Resources\eliminar-foto.png" />
+    <None Include="Resources\exit.png" />
+    <None Include="Resources\Dashboard.PNG" />
+    <Content Include="Resources\icono-cliente.png" />
+    <None Include="Resources\open-book.png" />
+    <None Include="Resources\open-book1.png" />
+    <None Include="Resources\menu2.png" />
+    <None Include="Resources\maximize.png" />
+    <None Include="Resources\maximize %281%29.png" />
+    <None Include="Resources\maximize %282%29.png" />
+    <None Include="Resources\minimize %281%29.png" />
+    <None Include="Resources\maximize3.png" />
+    <Content Include="Resources\usuario.png" />
+    <None Include="Resources\itsc2.jpg" />
+    <None Include="Resources\itsc1.jpg" />
+    <None Include="Resources\power1.png" />
+    <None Include="Resources\cuadrado-comprimido1.png" />
+    <Content Include="Resources\ed.jpg" />
+    <None Include="Resources\interruptor %281%29.png" />
+    <None Include="Resources\ed1.jpg" />
+    <Content Include="Resources\grupo.png" />
+    <Content Include="Resources\interruptor.png" />
+    <Content Include="Resources\itsc.jpg" />
+    <Content Include="Resources\power.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

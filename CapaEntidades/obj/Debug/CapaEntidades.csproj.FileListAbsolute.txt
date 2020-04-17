@@ -1,0 +1,5 @@
+C:\Users\yerlin\Documents\PROYECTOFINALTUTORIAS\FULL NEW PROYECT\CapaEntidades\bin\Debug\CapaEntidades.dll
+C:\Users\yerlin\Documents\PROYECTOFINALTUTORIAS\FULL NEW PROYECT\CapaEntidades\bin\Debug\CapaEntidades.pdb
+C:\Users\yerlin\Documents\PROYECTOFINALTUTORIAS\FULL NEW PROYECT\CapaEntidades\obj\Debug\CapaEntidades.csprojResolveAssemblyReference.cache
+C:\Users\yerlin\Documents\PROYECTOFINALTUTORIAS\FULL NEW PROYECT\CapaEntidades\obj\Debug\CapaEntidades.dll
+C:\Users\yerlin\Documents\PROYECTOFINALTUTORIAS\FULL NEW PROYECT\CapaEntidades\obj\Debug\CapaEntidades.pdb
